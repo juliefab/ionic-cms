@@ -1,0 +1,32 @@
+<!--
+  Generated template for the UserViewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>User View</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content *ngIf="user" padding>
+
+ <ion-list>
+
+    <ion-item>
+      <h1> <ion-icon name="md-person"></ion-icon>  &nbsp; {{user.first_name}} {{user.last_name}}</h1>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="md-happy"></ion-icon>    &nbsp;  {{ user.username }}
+    </ion-item>
+    <ion-item>
+        <ion-icon name="md-at"></ion-icon>  &nbsp; {{user.email}}
+    </ion-item>
+
+ </ion-list>
+
+</ion-content>
